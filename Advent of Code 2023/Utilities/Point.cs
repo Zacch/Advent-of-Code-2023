@@ -42,4 +42,6 @@ public class Point : IEquatable<Point>
     public override int GetHashCode() => HashCode.Combine(x, y);
 
     #endregion
+
+    public int ManhattanDistanceTo(Point other) => Math.Abs(x - other.x) + Math.Abs(y - other.y);
 }
