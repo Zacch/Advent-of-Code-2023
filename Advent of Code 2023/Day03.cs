@@ -58,7 +58,7 @@ public abstract class Day03
         return parts;
     }
 
-    private static char GetChar(int row, int col, List<List<char>> grid)
+    public static char GetChar(int row, int col, List<List<char>> grid)
     {
         if (row < 0 || col < 0) return '.';
         if (row >= grid.Count || col >= grid[row].Count) return '.';
