@@ -88,7 +88,7 @@ public abstract class Day13
     {
         var unsmudgedReflection = FindReflection(lines.ToList());
 
-        for (var i = 0; i < lines.Count(); i++)
+        for (var i = 0; i < lines.Length; i++)
         {
             if (lines[i] == "#...#....##....")
                 Console.WriteLine("");
