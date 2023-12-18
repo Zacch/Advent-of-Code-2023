@@ -43,5 +43,10 @@ public class Point : IEquatable<Point>
 
     #endregion
 
+    public override string ToString()
+    {
+        return $"({nameof(x)}: {x}, {nameof(y)}: {y})";
+    }
+
     public int ManhattanDistanceTo(Point other) => Math.Abs(x - other.x) + Math.Abs(y - other.y);
 }
