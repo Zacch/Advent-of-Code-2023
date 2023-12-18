@@ -4,7 +4,7 @@ namespace Advent_of_Code_2023;
 
 public abstract class Day10
 {
-    private enum IncomingDirection { North, South, None }
+    public enum IncomingDirection { North, South, None }
 
     public static void Solve()
     {
